@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registraionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".uis.Login">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout02"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent=".5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".85">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginIdTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_input"
+
+            >
+
+        <EditText
+            android:id="@+id/loginIdRegEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name or E mail"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:drawableStart="@drawable/custom_email_icon"
+            android:drawablePadding="12dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_input">
+
+
+        <EditText
+            android:id="@+id/passwordRegEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textVisiblePassword"
+            android:hint="Password"
+            android:drawableStart="@drawable/custom_lock_icon"
+            android:drawablePadding="12dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/webViewProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/button_corner_radius"
+        android:backgroundTint="@color/colorGreen"
+        android:elevation="25dp"
+        android:text="Register"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

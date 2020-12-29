@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:id="@+id/searchTxt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:hint="  Search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_corner_radius"
+            android:drawableLeft="@drawable/baseline_search_black_18dp"
+            android:backgroundTint="@color/colorGreen"
+            android:textColor="@color/white"
+            tools:ignore="MissingConstraints"/>
+
+
+
+    <Button
+        android:id="@+id/newsFeedBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="News Feed"
+        android:gravity="center"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_corner_radius"
+        android:drawableRight="@drawable/baseline_add_circle_outline_black_18dp"
+        android:backgroundTint="@color/colorGreen"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/browser_actions_bg_grey" />
+
+    </LinearLayout>
+    <RelativeLayout
+    android:id="@+id/r1"
+     android:orientation="vertical"
+    android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+    android:layout_height="wrap_content"
+     android:background="@color/colorBackground"
+     tools:ignore="MissingConstraints">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorGreen"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/newsFeed"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/cutom_list_icon" />
+
+            <Button
+                android:id="@+id/camara"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:background="@drawable/cutom_camara_icon" />
+
+
+
+
+            <Button
+                android:id="@+id/searchBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:layout_toEndOf="@+id/isearch"
+                android:background="@drawable/ic_search" />
+
+            <Button
+                android:id="@+id/list"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                android:padding="10dp"
+                android:layout_toEndOf="@+id/more"
+                android:background="@drawable/ic_baseline_more_24" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
